@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <script src="https://kit.fontawesome.com/06494d4185.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="css/main.css">
-<title>Gerardo Contreras | Contacto</title>
+<title>Gerardo Contreras | Educaci&oacute;n Financiera</title>
 </head>
 <body>
 <header>
@@ -24,23 +24,41 @@
 <li class="nav-item"><a href="index.html" class="nav-link"> INICIO </a></li>
 <li class="nav-item"><a href="about.html" class="nav-link"> PERFIL </a></li>
 <li class="nav-item"><a href="http://www.anecdotasfinancieras.com.ar/" class="nav-link"> PODCAST </a></li>
-<li class="nav-item"><a href="educacionfinanciera.html" class="nav-link"> EDUCACI&Oacute;N FINANCIERA </a></li>
-<li class="nav-item"><span class="nav-link"> CONTACTO </span></li>
+<li class="nav-item"><span class="nav-link"> EDUCACI&Oacute;N FINANCIERA </span></li>
+<li class="nav-item"><a href="contact.html" class="nav-link"> CONTACTO </a></li>
 </ul>
 </nav>
 </header>
 
 <main id="about">
 <div class="about-info">
-<h1 class="text-secondary display-3">Contacto</h1>
-<h4>
-Pod&eacute;s contactarme a través de mi Correo Electr&oacute;nico, responder&eacute; a la brevedad.
-</h4>
-<p class="text-secondary h4">
-gerardo@anecdotasfinancieras.com.ar
-</p>
+<div class="bio">
+<img src="images/trivia_cuanto_sabes.png">
+
+
+<br><br>
+<h2>
+Qu&eacute; te pareci&oacute; la trivia?<br>
+Estas listo para una mas avanzada?
+</h2>
+<br><br>
+<div class="popup" onclick="myFunction()">Suscribite!
+<span class="popuptext" id="myPopup">
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScP29wUURE3DkKGHi0-x9-BHSDUg45u4FQI0clWE70eAsbvCQ/viewform?embedded=true" width="640" height="624" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+</span>
+</div>
+
+</div>
+
 </div>
 </main>
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
 
 <script src="js/main.js"></script>
 </body>

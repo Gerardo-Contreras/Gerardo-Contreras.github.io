@@ -1,5 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Lato|Roboto|Raleway);
 
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
 .p {font-size: .9rem;}
 .text-center {text-align: center;}
 .data-info a {color: #55bbff;}
@@ -322,7 +327,8 @@ main {
   .streetflow {
     grid-template-columns: 1fr; }
   .gamp {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; } 
+  }
 
 @media screen and (max-width: 768px) {
   main {
@@ -364,7 +370,11 @@ main {
   .streetflow {
     grid-template-columns: 1fr; }
   .gamp {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; } 
+    img {
+      max-width: 100% !important;
+    } 
+  }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
@@ -384,4 +394,66 @@ main {
   .streetflow {
     grid-template-columns: 1fr; }
   .gamp {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  img {
+    max-width: 100% !important;
+  } 
+  }
+
+
+
+  /* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: auto;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -320px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
